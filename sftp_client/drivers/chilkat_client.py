@@ -9,11 +9,11 @@ import chilkat
 
 from base import SFTPClient
 
-from network.sftp.exceptions import *
+from sftp_client.exceptions import *
 
 
 class ChilkatClient(SFTPClient, chilkat.CkSFtp):
-    def __init__(self, host, username, password, timeout=None, license_key=None):
+    def __init__(self, host, username, password, timeout=None, license_key='trial_license'):
         SFTPClient.__init__(self, host, username, password, timeout=timeout)
         chilkat.CkSFtp.__init__(self)
 

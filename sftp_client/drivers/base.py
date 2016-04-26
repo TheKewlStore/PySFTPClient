@@ -5,7 +5,7 @@ Author: Ian Davis
 Last Updated: 12/9/2015
 """
 
-from shared.util import unit_conversion
+import unit_conversion
 
 
 class SFTPClient(object):
