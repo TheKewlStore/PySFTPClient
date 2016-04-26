@@ -8,9 +8,11 @@ Note: The PySFTPClient requires a license key to the chilkat python library, oth
 
 Basic usage example:
 
+```python
 from sftp_client import SFTPClient
 
 with SFTPClient(host, username, password, license_key='license_key') as client:
     client.download('./server_path.txt', '~/local_path.txt')
     client.upload('./server_path2.txt', ~/local_path.txt)
     print client.list_directory('./')
+```
